@@ -221,6 +221,75 @@ main {
         }
     }
 
+    section.view5{
+        @include flex-column(2rem);
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0.7rem;
+
+        .card1, .card2, .card3{
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 1/1;
+            border-radius: 0.7rem;
+
+            @include flex-column(0rem);
+            justify-content: space-between;
+            padding: 1rem;
+
+            .icon,.bottom{
+                background-color: rgba(119, 116, 116, 0.5);
+                backdrop-filter: blur(5px);
+                border:1px solid white;
+                border-radius: 0.7rem;
+                padding:0.5rem ;
+            }
+
+            .top{
+                display: flex;
+                gap: 1rem;
+                justify-content: flex-end;
+
+            }
+
+            .icon{
+                width: fit-content;
+                border-radius: 50%;
+                
+                i{
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                padding:1.5rem 1rem;
+
+                p{
+                    text-transform: uppercase;
+                }
+            }
+
+        }  
+        
+        .card1{
+            background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-800.webp");
+
+        }
+
+        .card2{
+            background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-1080.webp");
+            
+        }
+
+        .card3{
+            background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-1080.webp");
+            
+        }
+    }
 }
 
 
@@ -308,6 +377,11 @@ main {
 
             }
 
+        }
+
+        section.view5{
+            flex-direction: row;
+            padding: 1rem 4rem;
         }
     }
 }

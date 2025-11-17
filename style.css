@@ -199,6 +199,65 @@ main section.view4 .bottom .text button {
 main section.view4 .bottom > p {
   text-transform: uppercase;
 }
+main section.view5 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+main section.view5 .card1, main section.view5 .card2, main section.view5 .card3 {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section.view5 .card1 .icon, main section.view5 .card1 .bottom, main section.view5 .card2 .icon, main section.view5 .card2 .bottom, main section.view5 .card3 .icon, main section.view5 .card3 .bottom {
+  background-color: rgba(119, 116, 116, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  padding: 0.5rem;
+}
+main section.view5 .card1 .top, main section.view5 .card2 .top, main section.view5 .card3 .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.view5 .card1 .icon, main section.view5 .card2 .icon, main section.view5 .card3 .icon {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+}
+main section.view5 .card1 .icon i, main section.view5 .card2 .icon i, main section.view5 .card3 .icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+main section.view5 .card1 .bottom, main section.view5 .card2 .bottom, main section.view5 .card3 .bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+}
+main section.view5 .card1 .bottom p, main section.view5 .card2 .bottom p, main section.view5 .card3 .bottom p {
+  text-transform: uppercase;
+}
+main section.view5 .card1 {
+  background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd7d003dfb6a1bdecb_team-01-p-800.webp");
+}
+main section.view5 .card2 {
+  background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-1080.webp");
+}
+main section.view5 .card3 {
+  background-image: url("https://assets-global.website-files.com/63cffb7c16ab3347fc9734c8/63d2ccbd2e12fa747e999689_team-02-p-1080.webp");
+}
 
 @media (min-width: 900px) {
   main section.view1 {
@@ -262,5 +321,9 @@ main section.view4 .bottom > p {
   }
   main section.view4 .bottom .paragraphs p {
     font-size: 1rem;
+  }
+  main section.view5 {
+    flex-direction: row;
+    padding: 1rem 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
